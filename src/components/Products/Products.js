@@ -2,6 +2,8 @@ import {useState} from 'react';
 import productsData from '../../data/products';
 import Product from '../Product/Product';
 import data from '../../data/products';
+import { useMemo } from 'react';
+
 
 const Products = () => {
 	const [products] = useState(productsData);
