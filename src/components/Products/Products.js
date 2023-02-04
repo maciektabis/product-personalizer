@@ -8,14 +8,8 @@ const Products = () => {
 	console.log(data);
 	return (
 		<section>
-			{products.map((products) => (
-				<Product
-					key={products.id}
-					title={products.title}
-					price={products.basePrice}
-					colors={products.colors}
-					{...data}
-				/>
+			{products.map((product) => (
+				<Product key={product.id} {...product} />
 			))}
 		</section>
 	);
